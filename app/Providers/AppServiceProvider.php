@@ -17,7 +17,7 @@ class AppServiceProvider extends ServiceProvider
   public function boot()
   {
       // URL::forceScheme('`http`'); 
-      $this->app['request']->server->set('http', true);
+      // $this->app['request']->server->set('http', true);
       Schema::defaultStringLength(191);
       Paginator::useBootstrap();
   }
